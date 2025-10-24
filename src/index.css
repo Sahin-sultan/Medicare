@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Animation for ECG line */
+@keyframes ecgAnimate {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.ecg-line {
+  stroke-dasharray: 1000;
+  animation: ecgAnimate 20s linear infinite;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
+
+    --primary: 170 65% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 170 70% 45%;
+
+    --secondary: 195 75% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    --accent: 170 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 170 65% 35%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(170, 65%, 35%), hsl(170, 70%, 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(195, 75%, 50%), hsl(170, 70%, 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(210, 30%, 98%));
+    
+    --shadow-card: 0 2px 8px hsl(210 20% 15% / 0.05);
+    --shadow-elevated: 0 8px 24px hsl(210 20% 15% / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 210 20% 15%;
+    --sidebar-primary: 170 65% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 30% 96%;
+    --sidebar-accent-foreground: 210 20% 15%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 170 65% 35%;
+  }
+
+  .dark {
+    --background: 210 25% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 170 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 170 75% 55%;
+
+    --secondary: 195 70% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 18%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 170 75% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 170 70% 45%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(170, 70%, 45%), hsl(170, 75%, 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(195, 70%, 45%), hsl(170, 75%, 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210, 25%, 8%), hsl(210, 20%, 12%));
+    
+    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.2);
+    --shadow-elevated: 0 8px 24px hsl(0 0% 0% / 0.3);
+
+    --sidebar-background: 210 20% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 170 70% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 210 20% 20%;
+    --sidebar-ring: 170 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

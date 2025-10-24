@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "terminal.integrated.cwd": "c:\\Users\\Sahin sultan\\Downloads\\remedy-reach-route-main (1)\\remedy-reach-route-main",
+        "terminal.integrated.defaultProfile.windows": "PowerShell",
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "args": ["-NoLogo"],
+                "icon": "terminal-powershell"
+            }
+        }
+    }
+}
