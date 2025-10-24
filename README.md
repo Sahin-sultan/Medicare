@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # MediCare - AI-Enhanced Healthcare Platform
+=======
+# Welcome to my  project
+>>>>>>> 7661de81bcc64f570ddafdd2ac0f94ba94a03fde
 
 ## 🤖 AI-Powered Development
 This project was developed in collaboration with Lovable AI, showcasing the potential of human-AI partnership in creating modern healthcare solutions. The entire codebase, including UI components, responsive design, and architecture decisions, was crafted through intelligent interactions with AI.
@@ -39,12 +43,6 @@ MediCare is a state-of-the-art healthcare platform that leverages modern web tec
 - 🛣️ React Router
 - 📱 Mobile-first design
 - 🤖 AI-assisted development
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/6c9191cf-8d08-4bdf-b207-bd8f3efb8c02) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -92,9 +90,6 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6c9191cf-8d08-4bdf-b207-bd8f3efb8c02) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
